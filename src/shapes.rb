@@ -43,7 +43,7 @@ class GetTaskOutput
   end
 
   def to_output
-    { task: @task, test: "test" }.to_json + "\n"
+    { task: @task, environment: "production" }.to_json + "\n"
   end
 end
 
